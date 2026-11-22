@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Brew & Bloom Café — freshly brewed coffee, delicious bites and memorable moments.">
+    <meta name="theme-color" content="#071b12">
+    <title>Brew & Bloom | Café Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="#home" class="logo" aria-label="Brew and Bloom home">
+                <img src="images/logo.png" alt="Brew & Bloom Café Shop">
+            </a>
+
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false" aria-controls="navbar">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="navbar" id="navbar">
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Our Story</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <a href="#reservation" class="nav-booking">Book a Table</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-shade"></div>
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="eyebrow hero-eyebrow">A LITTLE PLACE TO UNWIND</p>
+                    <h1>Good coffee.<br><span>Beautiful moments.</span></h1>
+                    <p class="hero-description">
+                        Slow down, take a sip and enjoy the little things.
+                        Freshly brewed coffee and delicious café favourites,
+                        made for moments worth sharing.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#menu" class="button button-gold">Explore the Menu <span>↗</span></a>
+                        <a href="#about" class="text-link hero-link">Discover our café</a>
+                    </div>
+                </div>
+                <div class="hero-stamp" aria-label="Freshly brewed with love">
+                    <span>FRESHLY</span><strong>BREWED</strong><span>WITH LOVE</span>
+                </div>
+            </div>
+            <a href="#highlights" class="scroll-hint">SCROLL TO EXPLORE <span>↓</span></a>
+        </section>
+
+        <section class="highlights" id="highlights">
+            <div class="container highlight-grid">
+                <article class="highlight-card">
+                    <span class="highlight-icon">✳</span>
+                    <h2>Freshly Brewed</h2>
+                    <p>Carefully prepared coffee in every cup.</p>
+                </article>
+                <div class="highlight-image">
+                    <img src="images/about.png" alt="A warm view inside Brew & Bloom café" loading="lazy">
+                </div>
+                <article class="highlight-card">
+                    <span class="highlight-icon">❋</span>
+                    <h2>Made with Care</h2>
+                    <p>Good ingredients and thoughtful details.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section about" id="about">
+            <div class="container about-container">
+                <div class="about-image">
+                    <img src="images/about.png" alt="Warm and welcoming Brew and Bloom café interior" loading="lazy">
+                    <div class="image-note"><strong>A place to pause</strong><span>Stay a little longer</span></div>
+                </div>
+                <div class="about-content">
+                    <p class="eyebrow">OUR STORY</p>
+                    <h2>More Than Just Coffee, It's an Experience.</h2>
+                    <p>
+                        At Brew & Bloom, we believe every cup tells a story. We bring
+                        together freshly brewed coffee, delicious food and a welcoming
+                        atmosphere to create a place where every moment feels special.
+                    </p>
+                    <p>
+                        Whether you're catching up with friends, working on something new
+                        or simply taking a break, there's always a place for you here.
+                    </p>
+                    <a href="#reservation" class="text-link">Come visit us <span>→</span></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section menu-section" id="menu">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">A TASTE OF HAPPINESS</p>
+                    <h2>Made to Be Savoured</h2>
+                    <p>Freshly prepared favourites for your coffee breaks and cravings.</p>
+                </div>
+
+                <div class="menu-filters" role="group" aria-label="Filter menu items">
+                    <button class="filter-btn active" data-filter="all" type="button">All</button>
+                    <button class="filter-btn" data-filter="coffee" type="button">Coffee</button>
+                    <button class="filter-btn" data-filter="food" type="button">Food</button>
+                    <button class="filter-btn" data-filter="dessert" type="button">Desserts</button>
+                </div>
+
+                <div class="menu-grid">
+                    <article class="menu-card" data-category="coffee">
+                        <img src="../Brew-and-Bloom-Cafe/images/menu/cappuccino.png" alt="Cappuccino coffee" loading="lazy">
+                        <div class="menu-card-content"><div class="menu-card-title"><h3>Cappuccino</h3><span>₹160</span></div><p>Rich espresso topped with silky steamed milk foam.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="coffee">
+                        <img src="../Brew-and-Bloom-Cafe/images/menu/iced-coffee.png" alt="Iced coffee" loading="lazy">
+                        <div class="menu-card-content"><div class="menu-card-title"><h3>Classic Iced Coffee</h3><span>₹180</span></div><p>Chilled coffee blended smooth for a refreshing break.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="food">
+                        <img src="../Brew-and-Bloom-Cafe/images/menu/sandwich.png" alt="Grilled sandwich" loading="lazy">
+                        <div class="menu-card-content"><div class="menu-card-title"><h3>Grilled Sandwich</h3><span>₹190</span></div><p>Toasted bread with a delicious savoury filling.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="food">
+                        <img src="../Brew-and-Bloom-Cafe/images/menu/pasta.png" alt="Creamy pasta" loading="lazy">
+                        <div class="menu-card-content"><div class="menu-card-title"><h3>Creamy Pasta</h3><span>₹240</span></div><p>A comforting bowl of creamy, flavourful pasta.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="dessert">
+                        <img src="../Brew-and-Bloom-Cafe/images/menu/chocolate-cake.png" alt="Chocolate cake" loading="lazy">
+                        <div class="menu-card-content"><div class="menu-card-title"><h3>Chocolate Cake</h3><span>₹150</span></div><p>Soft chocolate layers for your sweet cravings.</p></div>
+                    </article>
+                    <article class="menu-card" data-category="dessert">
+                        <img src="../Brew-and-Bloom-Cafe/images/menu/cheesecake.png" alt="Cheesecake slice" loading="lazy">
+                        <div class="menu-card-content"><div class="menu-card-title"><h3>Classic Cheesecake</h3><span>₹170</span></div><p>Rich, creamy cheesecake with a buttery base.</p></div>
+                    </article>
+                </div>
+                <p class="menu-note">Menu and prices are sample content. Update them to match the café.</p>
+            </div>
+        </section>
+
+        <section class="section gallery-section" id="gallery">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">LITTLE MOMENTS, BIG MEMORIES</p>
+                    <h2>A Glimpse Inside</h2>
+                    <p>Good coffee, cosy corners and moments worth slowing down for.</p>
+                </div>
+                <div class="gallery-grid">
+                    <img src="../Brew-and-Bloom-Cafe/images/gallery/gallery-1.png" alt="Coffee served at the café" loading="lazy">
+                    <img src="../Brew-and-Bloom-Cafe/images/gallery/gallery-2.png" alt="Cosy café seating" loading="lazy">
+                    <img src="../Brew-and-Bloom-Cafe/images/gallery/gallery-3.png" alt="Freshly prepared café food" loading="lazy">
+                    <img src="../Brew-and-Bloom-Cafe/images/gallery/gallery-4.png" alt="Barista preparing coffee" loading="lazy">
+                    <img src="../Brew-and-Bloom-Cafe/images/gallery/gallery-5.png" alt="Dessert served with coffee" loading="lazy">
+                    <img src="../Brew-and-Bloom-Cafe/images/gallery/gallery-6.png" alt="Warm café interior" loading="lazy">
+                </div>
+            </div>
+        </section>
+
+        <section class="section reservation-section" id="reservation">
+            <div class="container reservation-container">
+                <div class="reservation-copy">
+                    <p class="eyebrow">SAVE YOUR SPOT</p>
+                    <h2>Your Table Is Waiting.</h2>
+                    <p>Planning a coffee date or catching up with friends? Send us your preferred details and we'll be ready to welcome you.</p>
+                    <p class="reservation-small">This is a demo booking form. Connect it to a backend or booking service to receive real reservations.</p>
+                </div>
+                <form class="reservation-form" id="reservationForm">
+                    <div class="form-row">
+                        <label for="guestName">Your name</label>
+                        <input type="text" id="guestName" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-row">
+                        <label for="guestEmail">Email address</label>
+                        <input type="email" id="guestEmail" name="email" placeholder="you@example.com" required>
+                    </div>
+                    <div class="form-row form-row-split">
+                        <div><label for="bookingDate">Date</label><input type="date" id="bookingDate" name="date" required></div>
+                        <div><label for="bookingTime">Time</label><input type="time" id="bookingTime" name="time" required></div>
+                    </div>
+                    <div class="form-row">
+                        <label for="guestCount">Number of guests</label>
+                        <select id="guestCount" name="guests" required>
+                            <option value="1">1 guest</option><option value="2" selected>2 guests</option>
+                            <option value="3">3 guests</option><option value="4">4 guests</option>
+                            <option value="5">5 guests</option><option value="6">6 guests</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="button button-gold form-submit">Request a Table <span>→</span></button>
+                    <p class="form-message" id="formMessage" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
+        <section class="section contact-section" id="contact">
+            <div class="container">
+                <div class="section-heading">
+                    <p class="eyebrow">WE'D LOVE TO SEE YOU</p>
+                    <h2>Come Say Hello</h2>
+                    <p>Drop by for your favourite cup or get in touch with us.</p>
+                </div>
+                <div class="contact-grid">
+                    <div class="contact-card"><span class="contact-icon">⌖</span><h3>Visit Us</h3><p>123 Coffee Street<br>Your City, India</p></div>
+                    <div class="contact-card"><span class="contact-icon">◷</span><h3>Opening Hours</h3><p>Monday – Sunday<br>9:00 AM – 10:00 PM</p></div>
+                    <div class="contact-card"><span class="contact-icon">✉</span><h3>Get in Touch</h3><p><a href="mailto:hello@brewandbloom.example">hello@brewandbloom.example</a><br><a href="tel:+910000000000">+91 00000 00000</a></p></div>
+                </div>
+                <p class="contact-note">Replace the sample address, phone number and email with the café's real details.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-container">
+            <a href="#home" class="footer-brand">Brew <span>&</span> Bloom</a>
+            <p>Good coffee. Good food. Good moments.</p>
+            <div class="footer-links"><a href="#about">Our Story</a><a href="#menu">Menu</a><a href="#reservation">Reservations</a><a href="#contact">Contact</a></div>
+            <p class="copyright">© <span id="currentYear"></span> Brew & Bloom Café. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
